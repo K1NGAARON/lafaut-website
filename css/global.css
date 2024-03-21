@@ -12,16 +12,30 @@
     --transition: all .25s ease-in-out;
 }
 
+.art-header {
+    background-color: var(--white);
+}
+
+.art-header .art-logo img {
+    width: 125px;
+}
+
 .form-wrapper {
     display: flex;
     width: 100%;
     padding: 30px;
     margin: 0 auto;
-    border-radius: 3px;
-    background-color: var(--white);
 }
 
 .form-wrapper form {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0;
+}
+
+.form-wrapper.large form {
     width: 100%;
     display: flex;
     flex-direction: column;
