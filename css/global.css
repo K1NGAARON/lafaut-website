@@ -20,6 +20,37 @@
     width: 125px;
 }
 
+.art-header .nav-item span {
+    color: #000;
+}
+
+.art-color-scheme-second .art-nav-menu ul.menu > li > a span:before {
+    background-color: #000;
+}
+
+.art-main-container .art-page .elementor-button-wrapper .elementor-button {
+    color: var(--black);
+    background-color: transparent;
+    border: 1px solid var(--black);
+    transition: var(--transition);
+}
+
+.art-main-container .art-page .elementor-button-wrapper .elementor-button:hover {
+    color: var(--white);
+    background-color: var(--black);
+    transition: var(--transition);
+}
+
+.art-main-container .art-page .white-btn .elementor-button {
+    color: var(--white);
+    border: 1px solid var(--white);
+}
+
+.art-main-container .art-page .white-btn .elementor-button:hover {
+    color: var(--black);
+    background-color: var(--white);
+}
+
 .form-wrapper {
     display: flex;
     width: 100%;
@@ -75,4 +106,13 @@
 
 .form-wrapper .btn:hover {
     transform: scale(1.02);
+}
+
+.art-apartment-post.art_apartment_type-uitverkocht {
+    opacity: 0.4;
+}
+
+.values-wrapper .item {
+    background-color: var(--white);
+    padding: 30px;
 }
