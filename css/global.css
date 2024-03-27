@@ -56,6 +56,12 @@
 	border-color: var(--black);
 }
 
+.art-header .art-color-scheme-second .hamburger-inner, 
+.art-header .art-color-scheme-second .hamburger-inner::before, 
+.art-header .art-color-scheme-second .hamburger-inner::after{
+    background-color: var(--black);
+}
+
 .form-wrapper {
     display: flex;
     width: 100%;
