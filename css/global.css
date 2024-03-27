@@ -51,6 +51,11 @@
     background-color: var(--white);
 }
 
+.art-color-scheme-second .art-header-button {
+	color: var(--black);
+	border-color: var(--black);
+}
+
 .form-wrapper {
     display: flex;
     width: 100%;
