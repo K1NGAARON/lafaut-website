@@ -10,6 +10,11 @@
     --overlay: var(--black);
     --overlayVertical: linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 24%, rgba(0,0,0,0) 70%);
     --transition: all .25s ease-in-out;
+
+    --art-h1-mobile-font-size: 30px;
+    --art-h2-mobile-font-size: 26px;
+    --art-h3-mobile-font-size: 24px;
+    --art-h5-mobile-font-size: 20px;
 }
 
 .art-header {
@@ -126,4 +131,22 @@
 .values-wrapper .item {
     background-color: var(--white);
     padding: 30px;
+}
+
+.art-headline {
+    display: none!important;
+}
+
+@media (max-width: 560px) {
+    .art-header-button {
+        padding: 15px;
+    }
+
+    .form-wrapper form {
+        width: 100%;
+    }
+
+    h5.art-post-title {
+        font-size: 20px;
+    }
 }
