@@ -15,6 +15,17 @@
     --art-h2-mobile-font-size: 26px;
     --art-h3-mobile-font-size: 24px;
     --art-h5-mobile-font-size: 20px;
+
+    --art-button-letter-spacing: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    font-weight: 400;
 }
 
 .art-header {
@@ -149,6 +160,22 @@
 .art-header {
     position: fixed!important;
     border-bottom: 1px solid #00000020!important;
+}
+
+.art-nav-menu ul.menu > li > a span {
+    font-size: 16px;
+}
+
+.art-footer-widgets__area p,
+.art-footer-widgets__area a {
+    font-size: 14px;
+    text-transform: none;
+    font-weight: 400;
+    font-family: Poppins;
+}
+
+.art-footer-widgets__area .widget_nav_menu li {
+    margin-top: 0;
 }
 
 @media (max-width: 560px) {
