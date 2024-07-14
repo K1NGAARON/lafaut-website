@@ -30,10 +30,11 @@ html {
 
 .art-header {
     background-color: var(--white);
+	padding: 0;
 }
 
 .art-header .art-logo img {
-    width: 125px;
+    width: 250px;
 }
 
 .art-header .nav-item span {
@@ -139,6 +140,10 @@ html {
     opacity: 0.4;
 }
 
+.no-tag .art-apartment-post-info {
+    display: none;
+}
+
 .full-color .art-apartment-post.art_apartment_type-uitverkocht {
     opacity: 1;
 }
@@ -155,6 +160,10 @@ html {
 .art-header {
     position: sticky;
     transform: translateY(0);
+}
+
+.art-header.art-sticky-hide {
+    transform: unset;
 }
 
 .art-header {
@@ -176,6 +185,22 @@ html {
 
 .art-footer-widgets__area .widget_nav_menu li {
     margin-top: 0;
+}
+
+[data-post-type="art-apartment"] .art-ajax-terms-list {
+    display: flex;
+}
+
+[data-post-type="art-apartment"] .art-ajax-terms-list .art-ajax-terms-list-item:nth-child(1) {
+    order: 1; /* First child stays in place 1 */
+}
+
+[data-post-type="art-apartment"] .art-ajax-terms-list .art-ajax-terms-list-item:nth-child(2) {
+    order: 3; /* Second child goes to place 3 */
+}
+
+[data-post-type="art-apartment"] .art-ajax-terms-list .art-ajax-terms-list-item:nth-child(3) {
+    order: 2; /* Third child goes to place 2 */
 }
 
 @media (max-width: 560px) {
